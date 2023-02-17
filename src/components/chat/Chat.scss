@@ -1,0 +1,103 @@
+.chat {
+  width: 50%;
+  height: 500px;
+  padding: 1rem;
+  @media screen and (max-width: 700px) {
+    width: 90%;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    padding: 16px;
+    overflow-y: auto;
+    gap: 16px;
+
+    @media screen and (max-width: 700px) {
+      border: none;
+    }
+  }
+
+  &__card {
+    padding: 16px;
+    max-width: 60%;
+    text-align: left;
+    overflow-wrap: anywhere;
+    font-size: 16px;
+    
+  }
+
+  &__bot {
+    display: flex;
+    align-self: flex-start ;
+    border-radius: 20px 20px 20px 0px;
+    background-color: #581b8a;
+    word-wrap: break-word;
+  }
+
+  &__agus {
+    display: flex;
+    align-self: flex-end;
+    border-radius: 20px 20px 0px 20px;
+    background-color: #a954f8
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    height: 33px;
+    box-sizing: border-box;
+    margin-top: 8px;
+  }
+
+  &__input {
+    height: 40px;
+    display: flex;
+    flex: 11 1  auto;
+    outline: none;
+    border: none;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 6px 0 0 6px ;
+    background-color: #333949;
+    color: #fff;
+    padding: 16px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: centers;
+    flex: 1 2 auto;
+    background-color: #581b8a;
+    border: none;
+    color: #fff;
+    padding: 8px;
+    border-radius: 0 6px 6px 0 ;
+    height: 40px
+  }
+}
+div a {
+  color: #fff;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra */
+  height: 10px; /* Altura de la barra */
+}
+
+/* Estilo del pulgar de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background-color: #333949; /* Color de fondo */
+  border-radius: 5px; /* Borde redondeado */
+}
+
+/* Estilo de la pista de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Color de fondo */
+}
