@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { getValidation } from '../../services/cohear.service'
 import { responses } from './data'
 import './Chat.scss'
+import { IcBaselineSend } from '../icons/Icons'
 
 export const Chat = () => {
 
@@ -58,7 +59,9 @@ export const Chat = () => {
           value={question}
           autoComplete='off'
           />
-          <button className='chat__button' disabled={loading} type='submit'>↩</button>
+          <button className='chat__button' disabled={loading} type='submit'>
+            <IcBaselineSend />
+          </button>
         </form>
 
     </div  >
