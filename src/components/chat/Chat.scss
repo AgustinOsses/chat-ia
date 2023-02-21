@@ -1,9 +1,17 @@
+
+
 .chat {
   width: 50%;
   height: 500px;
-  padding: 1rem;
+  box-sizing: border-box;
+  color: #fff;
+  margin: 16px auto;
+
   @media screen and (max-width: 700px) {
-    width: 90%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+    height: 85vh;
   }
 
   &__wrap {
@@ -13,12 +21,12 @@
     width: 100%;
     height: 100%;
     border-radius: 6px;
-    padding: 16px;
     overflow-y: auto;
     gap: 16px;
+    
 
     @media screen and (max-width: 700px) {
-      border: none;
+      margin-bottom: 24px;
     }
   }
 
@@ -26,6 +34,7 @@
     padding: 16px;
     max-width: 60%;
     text-align: left;
+    margin-bottom: 16px;
     overflow-wrap: anywhere;
     font-size: 16px;
     
@@ -51,13 +60,13 @@
     align-items: center;
     height: 33px;
     box-sizing: border-box;
-    margin-top: 8px;
+    margin: 12px 0;
   }
 
   &__input {
     height: 40px;
     display: flex;
-    flex: 11 1  auto;
+    flex: 11 1 auto;
     outline: none;
     border: none;
     padding: 8px;
@@ -66,6 +75,10 @@
     background-color: #333949;
     color: #fff;
     padding: 16px;
+
+    @media screen and (max-width: 700px) {
+      height: 60px;
+    }
   }
 
   &__button {
@@ -78,7 +91,14 @@
     color: #fff;
     padding: 8px;
     border-radius: 0 6px 6px 0 ;
-    height: 40px
+    height: 40px;
+
+    @media screen and (max-width: 700px) {
+      height: 60px;
+      flex: 4 1 auto;
+    }
+
+    
   }
 }
 div a {

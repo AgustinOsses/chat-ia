@@ -38,13 +38,15 @@ export const Chat = () => {
   
 
   return (
-    <main  className='chat' >
+    <div  className='chat' >
       <div className='chat__wrap' ref={box}>
         {
           messages.map(({id, type, text}) => (
             <div key={id} className={`chat__${type === 'bot' ? 'bot' : 'agus'} chat__card `}>{text}</div>
           ))
         }
+
+     
       </div>
       <form className='chat__form'  onSubmit={handleSubmit}>
           <input 
@@ -58,6 +60,7 @@ export const Chat = () => {
           />
           <button className='chat__button' disabled={loading} type='submit'>↩</button>
         </form>
-    </main  >
+
+    </div  >
   )
 }
